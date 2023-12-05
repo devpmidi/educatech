@@ -1,0 +1,1346 @@
+/*CSS*/
+
+/**** Formatação para todas as seções - Início ****/
+
+/*Cores do site*/
+:root {
+	--branco: #FFFFFF; 
+	--preto: #000000;
+    --verde: #4CAF50;
+    --cinza-inputs: #CACACA;
+    --azul-claro: #2196F3;
+    --azul: #073952;
+    --roxo: #444791;
+    --amarelo-claro: #FFFACD;
+    --amarelo-escuro: #FFD700;
+    --btn-azul: #4682B4;
+    --btn-verde: #6B8E23;
+}
+/**/
+
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#body-fundo-escuro{
+    background-color: #201b2c;
+}
+
+#container-branco{
+    width: 80%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--branco);
+    padding: 30px;
+    overflow: auto;
+    padding-bottom: 80px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 14px;
+    text-align: justify;
+}
+
+
+/*Barra de rolagem*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/**/
+
+[class*="coluna-"]{
+	float: left;
+    word-wrap: break-word;
+}
+
+.col-03-lista, .col-02-lista, .col-01-lista, .col-10-lista, .col-11-lista, .col-04-lista, .col-08-lista{
+    float: left;
+    word-wrap: break-word;
+}
+
+.coluna-01, .col-01-lista {
+	width: 8.33%;
+}
+
+.coluna-02, .col-02-lista {
+	width: 16.66%;
+}
+
+.coluna-03, .col-03-lista {
+	width: 25%;
+}
+
+.coluna-04, .col-04-lista {
+	width: 33.33%;
+}
+
+.coluna-05 {
+	width: 41.66%;
+}
+
+.coluna-06 {
+	width: 50%;
+}
+
+.coluna-07 {
+	width: 58.33%;
+}
+
+.coluna-08, .col-08-lista {
+	width: 66.66%;
+}
+
+.coluna-09, .col-09-lista {
+	width: 75%;
+}
+
+.coluna-10, .col-10-lista {
+	width: 83.33%;
+}
+
+.coluna-11{
+	width: 91.66%;
+}
+
+.coluna-12 {
+	width: 100%;
+	float: none;
+}
+
+.linha{
+    width: 100%;
+    min-height: 30px;
+    overflow: auto;
+    
+}
+
+.inputs, .selects-alunos{
+    height: 40px;
+    width: 90%;
+    padding: 5px;
+    border: 1px solid var(--cinza-inputs);
+    border-radius: 3px;
+}
+
+.inputs-cad-escola{
+    margin-top: 10px;
+}
+
+.inputs-cad-usuario{
+    margin-bottom: 10px;
+}
+
+.inputs-cad-aluno{
+    margin-bottom: 20px;
+}
+
+#header-form-aluno{
+    display: none;
+}
+
+#btn-pg-aluno{
+    margin-top: 30px;
+}
+
+.labels{
+    font-size: 14px;
+    color: #808080;
+    font-weight: bold;
+}
+
+.textarea{
+    width: 90%;
+    height: 130px;
+    border: 1px solid var(--cinza-inputs);
+    resize: none;
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.textarea:focus{
+    background-color: #fff;
+}
+
+.coluna-nome{
+    padding-right: 20px;
+}
+#cabecalho{
+    width: 100%;
+    min-height: 40px;
+    overflow: auto;
+    background-color: var(--roxo);
+
+}
+
+#cabecalho-img img, .cabecalho-icones img, #sair-sistema{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px; 
+    cursor: pointer;
+}
+
+.cabecalho-icones{
+    text-align: right;
+    padding-right: 10px;
+}
+
+#container-cabecalho{
+    line-height: 50px;
+}
+
+#container-cabecalho .coluna-01{
+    cursor: pointer;
+}
+
+#cabecalho-img {
+    text-align: center;
+}
+
+#cabecalho-titulo{
+    font-size: 22px;
+}
+
+#cabecalho-nome-usuario{
+    text-transform: uppercase;
+}
+
+#rodape{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 240px;
+    background-color: var(--roxo);
+    overflow: auto;
+    margin-top: 15px;
+}
+
+
+#container-rodape{
+    min-height: 215px;
+    overflow: auto;
+    padding: 20px;
+}
+
+#container-rodape, #container-cabecalho{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--branco);
+}
+
+#rodape-ano{
+    width: 100%;
+    height: 25px;
+    background-color: #25287e;
+    text-align: center;
+    line-height: 25px;
+    color: var(--branco);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.rodape-titulo{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.rodape-desc{
+    min-height: 15px;
+    padding-right: 80px;
+    text-align: left;
+    font-size: 13px;
+    overflow: auto;
+}
+
+.rodape-desc p{
+    font-size: 13px;
+}
+
+.cabecalho-rodape-links, #sessao-home-link a{
+    color: var(--branco);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rodape-email{
+    width: 15px;
+    height: 15px;
+}
+
+.rodape-linha-email{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+/** Estilização dos botões **/
+#btn-cad-comentario{
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.btn-cad-escola, .btn-voltar, #btn-cad-comentario, #btn-pesquisar, #btn-excluir{
+    color: var(--branco);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+}
+
+.btn-cad-escola, .btn-voltar, #btn-excluir{
+    width: 180px;
+    margin-top: 10px;
+}
+
+
+#btn-pesquisar{
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+}
+
+.btn-voltar, #btn-pesquisar, #btn-cad-comentario{
+    border: 2px solid var(--btn-azul);
+    background-color: var(--btn-azul);
+}
+
+.btn-cad-escola{
+    border: 2px solid var(--btn-verde);
+    background-color: var(--btn-verde);
+}
+
+.btn-cad-escola:hover {
+  background-color: var(--branco); 
+  color: var(--btn-verde);
+}
+
+.btn-voltar:hover, #btn-pesquisar:hover, #btn-cad-comentario:hover {
+  background-color: var(--branco); 
+  color: var(--btn-azul);
+}
+
+/*Estilização do Checkbox*/
+.input-radio, .input-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-radio input, .input-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio-checked {
+  border-radius: 50%;
+}
+
+.checkmark, .radio-checked{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.input-radio:hover input ~ .radio-checked, .input-checkbox:hover input ~ .checkmark {
+  background-color: var(--cinza-inputs);
+}
+
+.input-radio input:checked ~ .radio-checked{
+  background-color: var(--azul-claro);
+}
+
+.input-checkbox input:checked ~ .checkmark{
+    background-color: var(--roxo);
+}
+
+.checkmark:after, .radio-checked:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.input-checkbox input:checked ~ .checkmark:after, .input-radio input:checked ~ .radio-checked:after{
+  display: block;
+}
+
+.input-radio .radio-checked:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--branco);
+}
+
+.input-checkbox .checkmark:after {
+  left: 8px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.col-link{
+    width: 16.66%;
+    float: left;
+}
+
+/**** Formatação para todas as seções - Fim ****/
+
+/**** Formatação pagina home - Início ****/
+#sessao-home, #sessao-home-introducao{
+    min-height: 100px;
+    overflow: auto;
+}
+
+#sessao-home-introducao{
+    margin-top: 20px;
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+#sessao-home-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: serif;
+    text-align:center;
+}
+
+#sessao-home-desc{
+    color: #808080;
+    font-size: 18px;
+    font-family: serif;
+    text-align:center;
+}
+
+#sessao-home-link{
+    width: 300px;
+    height: 45px;
+    background-color: var(--btn-azul);
+    text-align: center;
+    line-height: 45px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+}
+
+#sessao-home-img img{
+    max-height: 400px;
+    width: 100%;
+}
+
+#sessao-home-img{
+    text-align: right;
+}
+
+#sessao-home-info-img img{
+    width: 90%;
+}
+
+#sessao-home-info-img{
+    min-height: 160px;
+    overflow: auto;
+}
+
+#sessao-home-info{
+    padding-top: 50px;
+    padding-right: 80px;
+    font-size: 20px;
+}
+
+#sessao-home-conteudo{
+    min-height: 300px;
+    overflow: auto;
+    width: 90%;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sessao-home-conteudo-titulo{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+
+/**** Formatação pagina home - Fim ****/
+
+/**** Formatação login-escola - Inicio ****/
+#container-admin{
+    width: 430px;
+    min-height: 400px;
+    overflow: auto;
+    margin-top:  20px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 1px solid var(--cinza-inputs);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#select-escola{
+    margin-bottom: 10px;
+}
+
+#coluna-admin-icone, #coluna-admin-titulo{
+    float: left;
+    min-height: 45px;
+    margin-bottom: 35px;
+}
+
+#coluna-admin-titulo{
+    color: #073952;
+    line-height: 45px;
+    width: 70%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#coluna-admin-icone{
+    text-align: right;
+    width: 30%;
+    padding-right: 15px;
+}
+
+#coluna-admin-icone img{
+    width: 45px;
+    height: 45px;
+}
+
+#erro-login{
+    background-color: #f44336;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+/**** Formatação login-escola - Fim ****/
+
+/*** Formatação pagina de menu do admin - Inicio ***/
+.linha-menu-admin{
+    width: 90%;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.opcoes-menu-admin{
+    background-color: #EEF9FF;
+    border: 1px solid var(--azul-claro);
+}
+
+.opcoes-menu-admin a:hover{
+    color: var(--btn-azul);
+}
+
+.linha-menu-admin a{
+    text-decoration: none;
+    color: #000;
+}
+
+#opcao-sair-admin{
+    border: 1px solid var(--amarelo-escuro);
+    background-color: var(--amarelo-claro);
+}
+
+#opcao-sair-admin a:hover{
+    font-size: 16px;
+}
+
+/*** Formatação pagina de menu do admin - Fim  ***/
+
+ /**** Formatação página de erro - Inicio ****/
+#container-erro{
+    width: 400px;
+    min-height: 200px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius:8px;
+}
+
+#container-erro .linha{
+    text-align: center;
+}
+
+#container-erro-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/**** Formatação página de erro - Fim ****/
+
+/*** Formatação página da lista de turmas - Inicio ***/
+.col-lista-turmas, .ultima-col-lista-turmas{
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.col-lista-turmas{
+    border-right: 1px solid var(--azul-claro);
+}
+
+
+.col-lista-turmas .linha, .ultima-col-lista-turmas .linha{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*** Formatação página da lista de turmas - Fim ***/
+
+/**** Formatação para pagina de cadastro da escola - Início ****/
+
+#alerta, #alerta-mobile, #erro-login{
+    min-height: 55px;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+#alerta, #alerta-mobile{
+    border-left: 5px solid var(--amarelo-escuro);
+    background-color: var(--amarelo-claro);
+    width: 50%;
+    display:none;
+}
+
+#etapa1-cad-escola, #etapa2-cad-escola, #etapa3-cad-escola{
+    width: 80%;
+    min-height: 500px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  20px;
+    padding: 20px;
+    
+}
+
+.container-titulo{
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: dotted #073952;
+    width: 45%;
+    min-height:  50px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+
+.container-cad-escola{
+    width: 50%;
+    min-height: 300px;
+    float: left;
+}
+
+.container-cad-escola img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.container-img{
+    text-align: center;
+}
+
+
+#etapa2-cad-escola{
+    display: none;
+}
+
+#etapa3-cad-escola{
+    display: none;
+}
+
+/**** Formatação para pagina de cadastro da escola - Fim ****/
+
+/**** Formatação pagina de gerenciamento do usuario - Início ****/
+
+#form-pesquisa-usuario{
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-bottom: 3px dotted var(--cinza-inputs);
+    width: 100%;
+    min-height:  60px;
+    padding-bottom: 25px;
+    overflow: auto;
+}
+
+#form-dados-usuario{
+    min-height:  60px;
+    padding-bottom: 40px;
+    overflow: auto;
+    border-bottom: 3px dotted var(--cinza-inputs);
+    width: 100%;
+    
+}
+
+#input-border-bottom{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: var(--cinza-inputs);
+    height: 30px;
+    width: 80%;
+    float: left;
+    
+}
+
+#container-opcoes{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 15px;
+    padding-left: 15px;
+    overflow: auto;
+}
+
+.header-lista{
+    margin-top: 30px;
+    height: 45px;
+    background-color: var(--cinza-inputs);
+    padding: 15px;
+    font-size: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-transform: uppercase;
+    width: 95%;
+    cursor: pointer;
+}
+
+.lista-icones{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.lista-icones img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#container-admins, #manual-turmas, #manual-docentes{
+    width: 95%;
+    min-height:  80px;
+    overflow: auto;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid var(--cinza-inputs);
+}
+
+#container-admins .linha{
+    padding: 15px;
+}
+
+.col-03-lista, .col-09-lista{
+    padding: 10px;
+    text-align: center;
+    float: left;
+}
+
+.linha-lista:hover, .linha-tabela-aluno:hover, #container-admins .linha-usuario:hover, .linha-noticia:hover{
+    background-color: #f4f4f4;
+    cursor:pointer;
+}
+
+.link-lista, .linha-tabela-aluno a{
+    color: var(--preto);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-cad-usuario, #btn-excluir{
+    margin-top: 75px;
+}
+
+#btn-excluir{
+    background-color: #555555;
+    border:0px;
+}
+
+#btn-excluir:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.linha-usuario .col-04-lista{
+    padding: 5px;
+}
+/**** Formatação pagina de gerenciamento do usuario - Fim ****/
+
+/**** Formatação pagina de manual do sistema - Inicio ****/
+#manual-turmas{
+    display: none;
+}
+
+#header-manual{
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: dotted var(--cinza-inputs);
+    width: 100%;
+    min-height:  50px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+/**** Formatação pagina de manual do sistema - Fim ****/
+
+/**** Formatação pagina de noticias - Início ****/
+
+.linha-noticia{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--cinza-inputs);
+    line-height: 30px;
+    width: 90%;
+}
+
+#caixa_cardapio{
+    width: 500px;
+    height: 300px;
+    border: 1px solid var(--cinza-inputs);
+}
+
+#caixa_cardapio img{
+    width:500px;
+    height: 300px;
+}
+
+.coluna-noticias img{
+    width: 20px;
+    height: 20px;
+}
+
+.coluna-noticias{
+    text-align: center;
+}
+
+#btn-cardapio{
+    margin-bottom: 50px;
+}
+
+/**** Formatação pagina de noticias - Fim ****/
+
+/**** Formatação pagina de gerenciamento das turmas - Início ****/
+#form-horario-aulas, #lista-alunos{
+    width: 100%;
+    min-height: 100px;
+    overflow: auto; 
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+#form-horario-aulas{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: 1px solid var(--btn-azul);
+}
+
+#lista-alunos{
+    border: 1px solid var(--cinza-inputs);
+}
+
+.header-titulo{
+    font-size: 22px;
+    margin-bottom: 30px;
+    border-bottom: dotted var(--cinza-inputs);
+    width: 100%;
+    min-height:  50px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+
+.header-titulo .coluna-05{
+    font-size: 22px;
+}
+
+.header-tabela{
+    width: 100%;
+    height: 40px;
+    background-color: var(--btn-azul);
+    padding: 10px;
+    color:var(--branco);
+}
+
+.linha-tabela-cor{
+    background-color: #eef1ff;
+}
+
+.linha-tabela, .linha-tabela-aluno{
+    width: 100%;
+    min-height: 45px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+.selects-disciplinas{
+    width: 85%;
+    height: 30px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: var(--cinza-inputs);
+}
+
+
+.selects-docentes, #select-escola{
+    width: 90%;
+    height: 40px;
+    border: 1px solid var(--cinza-inputs);
+}
+
+.selects-docentes{
+    margin-left: 5%;
+}
+
+#linha-intervalo{
+    text-align: center;
+    background-color: #B0C4DE;
+}
+
+.form-materias{
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#form-disciplinas-professores{
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 100px;
+    overflow: auto;
+}
+
+#form-disciplinas-professores .btn-voltar{
+    margin-top: 30px;
+}
+
+#header-tabela-aluno{
+    margin-top: 30px;
+    height: 50px;
+    background-color: var(--cinza-inputs);
+    padding: 15px;
+    font-size: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-cad-aluno{
+    padding-top: 15px;
+    text-align: left;
+}
+
+.link-azul{
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--btn-azul);
+    font-weight: bold;
+    text-align: left;
+}
+
+.link-disciplinas{
+    padding-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--btn-azul);
+    font-weight: bold;
+}
+
+.link-disciplinas:hover{
+    color:#000;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.link-azul:hover{
+    color:#000;
+}
+
+#coluna-pesquisar-aluno{
+    padding-right: 15px;
+    text-align: right;
+    line-height: 35px;
+}
+
+/**** Formatação pagina de gerenciamento das turmas - Fim****/
+
+/**** Formatação pagina do professor - Início ****/
+.col-lista-prof{
+    text-align: right;
+    padding-right: 15px;
+    width: 8.33%;
+    float: left;
+}
+
+.linha-borda-prof{
+    margin-bottom: 10px;
+}
+/**** Formatação pagina do professor - Fim ****/
+
+/**** Formatação pagina de aulas - Início ****/
+.linha-aulas, .linha-tarefas, .linha-comentarios{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 90%;
+    min-height: 25px;
+    overflow: auto;
+    padding-right: 20px;
+}
+
+.col-chamada{
+    float:left;
+    height: 50px;
+    min-width: 30px;
+    overflow: auto;
+    text-align: center;
+    padding: 10px;
+    line-height: 30px;  
+    margin-top: 10px;
+}
+
+.caixa-nome-aluno{
+    margin-left: 10px;
+    background-color: #EEF9FF;
+    border-radius: 20px;
+}
+
+.linha-aulas{
+    border-left: 3px solid #0AAB80;
+}
+
+.linha-tarefas{
+    border-left: 3px solid #F98433;
+    
+}
+
+.linha-comentarios{
+    border-left: 3px solid #201b2c;
+}
+
+.linha-aulas:hover{
+    background-color: #F0FFF0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.linha-tarefas:hover{
+    background-color: #FAF9DE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    
+}
+
+.linha-comentarios:hover{
+    background-color: #EEF9FF;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.ultima-linha-aulas{
+    margin-top: 60px;
+}
+
+.linha-link-aula{
+    margin-bottom: 30px;
+}
+
+.text-aulas{
+    text-transform: uppercase;
+}
+
+.link-aula{
+    text-decoration: none;
+    margin-right: 15px;
+    text-underline-position: under;
+    color: var(--btn-azul);
+}
+
+.link-aula:hover{
+    text-decoration: underline;
+}
+
+#header-tabela-presenca{
+    width: 90%;
+    height: 40px;
+    background-color: var(--btn-azul);
+    padding: 10px;
+    color:var(--branco);
+}
+
+#lista-presenca{
+    border: 1px solid var(--btn-azul);
+    width: 90%;
+    min-height: 80px;
+    overflow: auto; 
+    margin-bottom: 30px;
+}
+
+#textarea-comentario{
+    width: 90%;
+    height: 55px;
+    border: 1px solid var(--cinza-inputs);
+    resize: none;
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#formComentario .linha{
+    margin-top: 5px;
+}
+
+/**** Formatação pagina de aulas - Fim ****/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="coluna-"] {
+        width: 100%;
+    }
+    
+    #sessao-home-img img, .container-img, #cabecalho-img, .cabecalho-icones, #cabecalho-nome-usuario, #form-horario-aulas, .lista-icones, .header-form-aulas{
+        display: none;
+    }
+    
+    .container-cad-escola{
+        width: 100%;
+    }
+    
+    .container-titulo{
+        width: 100%;
+    }
+    
+    .btn-cad-usuario, #btn-excluir{
+        margin-top: 25px;
+    }
+    
+    #alerta{
+        width: 95%;
+    }
+    
+    .rodape-titulo{
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    #container-rodape{
+        padding: 5px;
+    }
+    
+    #coluna-pesquisar-aluno{
+        text-align: left;
+        line-height: 35px;
+    }
+    
+    #input-border-bottom{
+        margin-bottom: 10px;
+
+    }
+    
+    .link-aluno{
+        margin-bottom: 10px;
+    }
+    
+    #container-cabecalho{
+        line-height: normal;
+        padding-top: 5px;
+    }
+    
+    #container-cabecalho .coluna-01{
+        cursor: pointer;
+        text-decoration: underline;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    
+    #cabecalho-titulo{
+        text-align: center;
+    }
+    
+    .coluna-02-lista{
+        font-size: 10px;
+        
+    }
+    
+    .form-materias{
+        text-align: left;
+    }
+    
+    .selects-docentes{
+        margin-left: 0px;
+    }
+    
+    .header-tabela{
+        width: 90%;
+    }
+    
+    .linha-tabela-aluno{
+        margin-bottom: 5px;
+    }
+    
+    .col-lista-prof{
+        text-align: left;
+        width: 16.66%;
+        float: left;
+    }
+    
+    .linha-borda-prof{
+        border-bottom: 1px solid var(--cinza-inputs);
+    }
+    
+    .col-link{
+        width: 33.33%;
+    }
+    
+    #sessao-home-conteudo{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #sessao-home-info-img img{
+        width: 100%;
+    }
+    
+    #sessao-home-info{
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+    
+    
+    .rodape-titulo{
+        border-bottom: 1px solid #A9A9F0;
+    }
+    
+    .rodape-desc{
+        text-align: justify;
+        padding-right: 0px;
+    }
+    
+    #btn-cad-comentario{
+        width: 90%;
+    }
+    
+    .col-lista-turmas, .ultima-col-lista-turmas{
+        margin-bottom: 10px;
+    }
+
+    .col-lista-turmas{
+        border-right: 0px;
+    }
+
+    .col-lista-turmas .linha, .ultima-col-lista-turmas .linha{
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+    
+    #container-admin{
+        width: 80%;
+    }
+    
+    #alerta-mobile{
+        display:inline-block;
+        width:100%;
+        margin-bottom: 15px;
+    }
+    
+    #container-erro{
+        width: 80%;
+    }
+    
+    #container-branco{
+        width: 90%;
+    }
+    
+    .btn-cad-escola, .btn-voltar, #btn-excluir{
+        width: 80%px;
+    }
+    
+    #caixa_cardapio{
+        width: 90%;
+        height: 200px;
+    }
+
+    #caixa_cardapio img{
+        width:100%;
+        height: 200px;
+    }
+    
+    .selects-alunos{
+        margin-bottom: 20px;
+    }
+    
+    #formPesquisaAluno{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #header-form-aluno{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}

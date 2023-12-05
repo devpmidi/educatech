@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap');
+
+body{
+    background: #201b2c;
+    margin: 0%;
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+
+.info{
+    width: 90%;
+    min-height:  50px;
+    padding: 20px;
+    color: #f0ffffde;
+    font-size: 18pt;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    overflow: auto;
+}
+
+.info > img{
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+/* Rodapé */
+  footer {
+      background-color: #6f427b;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+  }
+
+  nav {
+    background-color: #6f427b; /* cor de fundo do menu */
+    height: 50px; /* altura do menu */
+  }
+  
+  nav ul {
+    list-style: none; /* removendo a estilização padrão da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* exibindo os itens em uma linha */
+    justify-content: space-between; /* alinhando os itens para ficarem espaçados igualmente */
+    align-items: center; /* centralizando verticalmente os itens */
+    height: 100%; /* ajustando a altura dos itens para ocuparem toda a altura do menu */
+  }
+  
+  nav ul li {
+    height: 100%; /* ajustando a altura dos itens para ocuparem toda a altura do menu */
+  }
+  
+  nav ul li a {
+    display: flex; /* exibindo o link como um elemento flexível */
+    align-items: center; /* centralizando verticalmente o texto do link */
+    color: #fff; /* cor do texto do link */
+    padding: 0 20px; /* espaçamento interno horizontal do link */
+    text-decoration: none; /* removendo a decoração padrão do link */
+    height: 100%; /* ajustando a altura dos links para ocuparem toda a altura do menu */
+  }
+  
+  nav ul li a:hover {
+    background-color: #00ced1 /* cor de fundo do link quando o mouse estiver sobre ele */
+  }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    * {
+        font-size: 14px;
+    }
+    
+    .info > img{
+        display: flex;
+        justify-content: center;
+        float: none;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+

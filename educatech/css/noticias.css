@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap');
+
+/* Define o estilo para o título da página */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Define o estilo para o subtítulo da página */
+h2 {
+    text-align: center;
+    color: white;
+}
+
+/* Define o estilo para a seção de notícias */
+.news-section {
+    margin-top: 30px;
+    width: 80%;
+    min-height: 50px;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Define o estilo para cada notícia individual */
+.news-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Define o estilo para o título de cada notícia */
+.news-item h3 {
+    color: white;
+    font-size: 20px;
+}
+
+/* Define o estilo para o conteúdo de cada notícia */
+.news-item p {
+    color: white;
+    line-height: 1.4;
+}
+
+  
+  
